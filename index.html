@@ -1,0 +1,550 @@
+<!doctype html>
+<!--
+  Sarrtle — independent programmer · automation, data & AI tooling
+  ---------------------------------------------------------------
+  Quick edit points (keep everything else grounded in fact):
+
+  1. Availability status  -> hero status pill, search `status-pill`
+  2. Contact email        -> contact section, search `mynetwork.gravel372@passinbox.com`
+  3. Featured work cards  -> #work section (label everything honestly)
+
+  Do not add testimonials, counts, clients, or achievements unless
+  they are real, agreed, and verifiable.
+--------------------------------------------------------------->
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarrtle: Independent programmer</title>
+  <meta name="description" content="Independent programmer for Python development, automation, web scraping and data collection, AI integration, debugging, and backend/API work. Direct communication, honest scoping, no agencies in between.">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Sarrtle: Independent programmer">
+  <meta property="og:description" content="Automation, web scraping, data collection, AI integration and backend/API development, built by one independent programmer.">
+  <meta property="og:type" content="website">
+  <!-- SEO (BASE_URL assumed https://sarrtle.github.io/home/ — repo not yet created; confirm after first push) -->
+  <meta property="og:url" content="https://sarrtle.github.io/home/">
+  <meta property="og:image" content="https://sarrtle.github.io/home/assets/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sarrtle: Independent programmer">
+  <meta property="og:site_name" content="Sarrtle">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sarrtle.github.io/home/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Sarrtle",
+        "url": "https://sarrtle.github.io/home/"
+      },
+      {
+        "@type": "Person",
+        "name": "Mark",
+        "url": "https://sarrtle.github.io/home/",
+        "jobTitle": "Independent Programmer",
+        "knowsAbout": ["Python", "Automation", "Web scraping", "Data collection", "AI integration", "Backend development"]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/blog.js" defer></script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header" id="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Sarrtle — back to top">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">Sarrtle</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm nav-cta-mobile" href="#contact">Start a Project</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="#contact">Start a Project</a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-box" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <!-- EDIT-ME · availability: keep honest. Examples:
+               "Open for new work" / "Currently busy — limited new work" -->
+          <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>Open for new work</p>
+
+          <h1 class="hero-title">
+            I build <span class="hl">automations</span>, <span class="hl">data systems</span>,
+            and <span class="hl">AI-powered tools</span>.
+          </h1>
+
+          <p class="hero-lead">
+            I&rsquo;m Mark, an independent programmer working in Python, Lua, C++ and Rust.
+            I build web scrapers, automation pipelines, backend APIs and AI-integrated tooling.
+            Most of it boils down to the same thing: turning repetitive, manual work into
+            software that runs on its own.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#contact">Start a Project</a>
+            <a class="btn btn-secondary" href="#work">View My Work</a>
+          </div>
+
+          <p class="hero-note">You&rsquo;re talking directly to the person doing the work. No agency, no middlemen.</p>
+        </div>
+
+        <!-- Decorative technical composition (CSS/HTML only, no stock imagery) -->
+        <div class="console-stage" aria-hidden="true">
+          <div class="console-card">
+            <div class="console-bar">
+              <span class="c-dot c-dot-r"></span><span class="c-dot c-dot-y"></span><span class="c-dot c-dot-g"></span>
+              <span class="console-title">automation — python</span>
+            </div>
+            <div class="console-body">
+              <p class="line typing">$ python run.py --collect --serve</p>
+              <p class="line ok"><span class="tick">&#10003;</span>collect &middot; scraping sources</p>
+              <p class="line ok"><span class="tick">&#10003;</span>validate &middot; clean &amp; check data</p>
+              <p class="line ok"><span class="tick">&#10003;</span>store &middot; sqlite records</p>
+              <p class="line ok"><span class="tick">&#10003;</span>serve &middot; api on :8000</p>
+              <p class="line dim">&mdash; listening on 0.0.0.0 &mdash;</p>
+            </div>
+          </div>
+
+          <div class="pipeline-card">
+            <p class="pipeline-title">an automation flow</p>
+            <div class="pipeline">
+              <span class="stage">collect</span><span class="arrow">&rarr;</span>
+              <span class="stage">clean</span><span class="arrow">&rarr;</span>
+              <span class="stage">store</span><span class="arrow">&rarr;</span>
+              <span class="stage hl-stage">serve</span>
+            </div>
+            <p class="pipeline-sub">scraping &middot; validation &middot; sqlite &middot; api</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== CAPABILITY STRIP ======================== -->
+    <section class="capabilities" aria-label="Technologies and domains">
+      <div class="container">
+        <p class="capabilities-label"><span>working set</span>: what I use day to day</p>
+        <ul class="chips">
+          <li>Python</li><li>Lua</li><li>C++</li><li>Rust</li><li>JavaScript</li>
+          <li>React</li><li>Tailwind CSS</li><li>Material UI</li><li>FastAPI</li>
+          <li>SQLAlchemy</li><li>SQLite</li><li>REST APIs</li><li>AI / LLM integration</li>
+          <li>Automation</li><li>Web scraping</li><li>Data collection</li><li>Data analysis</li>
+          <li>FFmpeg</li><li>Pillow</li><li>Linux</li><li>Termux</li><li>Git</li>
+        </ul>
+        <p class="capabilities-note">
+          This is what I work with, not a claim that I&rsquo;ve mastered all of it. Depth
+          varies by tool, and I&rsquo;ll be straight with you about what fits a project.
+        </p>
+      </div>
+    </section>
+
+    <!-- =============================== WORK =============================== -->
+    <section class="section" id="work">
+      <div class="container">
+        <p class="eyebrow">// selected work &amp; experiments</p>
+        <h2 class="section-title">Things I build &amp; tinker with</h2>
+        <p class="section-intro">
+          Personal projects and technical experiments, labeled honestly. No invented client work
+          and no padded metrics. The code behind these exists, and I&rsquo;m glad to walk you
+          through it.
+        </p>
+
+        <div class="work-grid">
+
+          <article class="work-card reveal">
+            <div class="work-visual work-visual-agent" aria-hidden="true">
+              <div class="wv-agent-card">
+                <p class="wv-agent-line"><span class="wv-muted">task:</span> refactor scraper module</p>
+                <p class="wv-agent-line"><span class="wv-good">plan</span> <span class="wv-muted">&#8594;</span> split into collector + validator</p>
+                <p class="wv-agent-line"><span class="wv-good">code</span> <span class="wv-muted">&#8594;</span> wrote 4 files, 214 lines</p>
+                <p class="wv-agent-line"><span class="wv-good">test</span> <span class="wv-muted">&#8594;</span> 12 checks passed</p>
+                <p class="wv-agent-loop"><span class="wv-good">&#8635;</span> iterate until green</p>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-meta">
+                <span class="badge">experiment</span>
+              </div>
+              <h3 class="work-title">AI coding agent experiments</h3>
+              <p class="work-text">
+                I&rsquo;m building an AI coding agent for AI-assisted software development. The work
+                covers planning, code generation, review loops and tool integration, and it&rsquo;s
+                tested against real codebases.
+              </p>
+              <p class="work-tags">Python &middot; AI &middot; developer tooling</p>
+              <a class="work-link" href="#contact">Ask me about this &rarr;</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-visual work-visual-csv" aria-hidden="true">
+              <div class="wv-csv">
+                <p class="wv-csv-name"><span class="wv-good">&#9656;</span> results.csv</p>
+                <div class="wv-csv-row wv-csv-head"><span>id</span><span>qty</span><span>pct</span></div>
+                <div class="wv-csv-row"><span>001</span><span>128</span><span>0.42</span></div>
+                <div class="wv-csv-row"><span>002</span><span>512</span><span>0.63</span></div>
+                <div class="wv-csv-row"><span>003</span><span>2048</span><span class="wv-csv-hi">0.91</span></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-meta">
+                <span class="badge">personal project</span>
+              </div>
+              <h3 class="work-title">Data analysis</h3>
+              <p class="work-text">
+                Working with collected data. Cleaning it, structuring it and analyzing it into
+                clear summaries and views that are easy to act on.
+              </p>
+              <p class="work-tags">Data &middot; Python &middot; automation</p>
+              <a class="work-link" href="#contact">Ask me about this &rarr;</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-visual work-visual-tools" aria-hidden="true">
+              <div class="wv-phone">
+                <div class="wv-phone-notch"></div>
+                <p class="wv-phone-line"><span class="wv-muted">~ $</span> ./tool --run</p>
+                <p class="wv-phone-line ok"><span class="tick">&#10003;</span> job scheduled</p>
+                <p class="wv-phone-line ok"><span class="tick">&#10003;</span> running on linux</p>
+                <p class="wv-phone-caret">&#9608;</p>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-meta">
+                <span class="badge">personal tooling</span>
+              </div>
+              <h3 class="work-title">Useful tools</h3>
+              <p class="work-text">
+                Practical, cross-platform tools for everyday work: CLI utilities, media and data
+                pipelines, and automation glue. They run where the work is, on Linux, Windows,
+                Android and beyond.
+              </p>
+              <p class="work-tags">Linux &middot; Windows &middot; automation</p>
+              <a class="work-link" href="#contact">Ask me about this &rarr;</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-visual work-visual-scrape" aria-hidden="true">
+              <div class="wv-lane">
+                <div class="wv-src"><span class="wv-doc"></span><span class="wv-doc small"></span></div>
+                <span class="wv-lane-arrow">&#8594;</span>
+                <div class="wv-clean"><span class="wv-check">&#10003;</span></div>
+                <span class="wv-lane-arrow">&#8594;</span>
+                <div class="wv-db"><span class="wv-db-top"></span><span class="wv-db-body"></span></div>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-meta">
+                <span class="badge">personal project</span>
+              </div>
+              <h3 class="work-title">Scraping &amp; automation pipelines</h3>
+              <p class="work-text">
+                Web scraping, data collection and automation: collecting from public web sources,
+                then cleaning, validating and storing the result so the data is actually usable.
+              </p>
+              <p class="work-tags">Python &middot; web scraping &middot; SQLite</p>
+              <a class="work-link" href="#contact">Ask me about this &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="work-footnote">
+          Personal projects and experiments from my own workbench. If one looks interesting,
+          contact me and I&rsquo;d be happy to show you how it works.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================================ BLOG =============================== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <p class="eyebrow">// blog &middot; latest posts</p>
+        <h2 class="section-title">Notes from the workbench</h2>
+        <p class="section-intro">
+          Write-ups on automation, data analysis, AI tooling and developer tooling,
+          grounded in real work, with research sources cited wherever claims are made.
+        </p>
+
+        <div class="blog-latest" id="blog-latest" data-posts="blog/posts.json">
+          <noscript>
+            <p class="blog-empty">
+              Post previews need JavaScript. You can still <a href="blog/">browse all posts</a>.
+            </p>
+          </noscript>
+        </div>
+
+        <p class="blog-archives">
+          <a class="work-link" href="blog/">All posts &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICES ============================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="eyebrow">// services</p>
+        <h2 class="section-title">What I can help with</h2>
+        <p class="section-intro">
+          One person, not an agency: no account managers, no hand-offs. The programmer you talk to
+          is the programmer who builds it.
+        </p>
+
+        <div class="services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#9654;&#9632;</span><h3>Python development</h3></div>
+            <p>Applications, scripts and tools in Python, from small utilities to structured
+               projects with tests and clean organization.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#9881;</span><h3>Automation</h3></div>
+            <p>Removing repetitive manual work: scheduled jobs, batch processing, file and data
+               workflows, and headless automation that runs without supervision.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#8681;</span><h3>Web scraping, data collection &amp; analysis</h3></div>
+            <p>Reliable collectors for public web data, with validation, cleaning and analysis.
+               You get usable insight, not raw noise.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#10068;</span><h3>Debugging &amp; problem-solving</h3></div>
+            <p>Finding and fixing bugs in existing code, or figuring out why something quietly
+               stopped working.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#9678;</span><h3>AI integration</h3></div>
+            <p>Practical AI/LLM features in real products: assistants, extraction, summarization
+               and agent-style tooling, built in properly rather than bolted on.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#8644;</span><h3>Backend &amp; API development</h3></div>
+            <p>APIs and services with FastAPI, SQLAlchemy and SQLite: data models, endpoints,
+               storage and the glue around them.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#9654;</span><h3>Custom software</h3></div>
+            <p>Small programs and tools made exactly for your workflow. The things that don&rsquo;t
+               exist off the shelf.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-head"><span class="service-icon" aria-hidden="true">&#10051;</span><h3>Developer tooling</h3></div>
+            <p>CLI tools, editor and desktop utilities, Linux/Termux tooling and plugins, built
+               for people who live in the terminal.</p>
+          </div>
+
+        </div>
+
+        <p class="services-note">
+          Don&rsquo;t see your problem in the list? Ask anyway. The interesting work is usually
+          the stuff that doesn&rsquo;t fit a category, and if a project doesn&rsquo;t need
+          software, I&rsquo;ll tell you that too.
+        </p>
+      </div>
+    </section>
+
+    <!-- =============================== ABOUT ============================== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">// about</p>
+          <h2 class="section-title">Independent programmer, direct communication.</h2>
+
+          <p>
+            I&rsquo;m Mark. I work across Python, Lua, C++ and Rust, with practical focus on
+            automation, web scraping and data collection, data analysis, AI-related development
+            and backend systems. Developer tooling, AI, data systems and software engineering
+            matter to me because that&rsquo;s the territory I actually work in.
+          </p>
+          <p>
+            I develop in a Linux environment, including Termux on Android. Real tooling, running
+            on real machines. That keeps things practical: software has to survive contact with an
+            actual operating system, not just a README.
+          </p>
+          <p>
+            I don&rsquo;t inflate claims. No invented years of experience, no fake client lists,
+            no padded metrics. If I haven&rsquo;t done something before, I&rsquo;ll tell you, and
+            whether it&rsquo;s still worth doing.
+          </p>
+        </div>
+
+        <ul class="values">
+          <li class="value reveal">
+            <span class="value-num">01</span>
+            <h3>Direct</h3>
+            <p>You talk to the person doing the work. No account managers, no hand-offs.</p>
+          </li>
+          <li class="value reveal">
+            <span class="value-num">02</span>
+            <h3>Iterative</h3>
+            <p>You see progress as it happens, not in one dramatic reveal at the end.</p>
+          </li>
+          <li class="value reveal">
+            <span class="value-num">03</span>
+            <h3>Honest</h3>
+            <p>When something doesn&rsquo;t need software at all, I&rsquo;m the one telling you.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== PROCESS ============================= -->
+    <section class="section" id="process">
+      <div class="container">
+        <p class="eyebrow">// process</p>
+        <h2 class="section-title">How working together goes</h2>
+        <p class="section-intro">
+          A simple loop that works for everything from a one-off script to a multi-week tool.
+          No spec-writing marathons, no surprise scope.
+        </p>
+
+        <ol class="process-list">
+          <li class="process-item reveal">
+            <span class="process-num" aria-hidden="true">01</span>
+            <div class="process-content">
+              <h3>The problem</h3>
+              <p>A few lines about what&rsquo;s manual, broken or missing. No spec, no jargon
+                 required. A description of the pain is enough to start.</p>
+            </div>
+          </li>
+          <li class="process-item reveal">
+            <span class="process-num" aria-hidden="true">02</span>
+            <div class="process-content">
+              <h3>Scope &amp; proposal</h3>
+              <p>I check feasibility and send an honest proposal: approach, deliverables and a
+                 timeline we both agree on. If it doesn&rsquo;t fit, you get a straight answer
+                 on why not.</p>
+            </div>
+          </li>
+          <li class="process-item reveal">
+            <span class="process-num" aria-hidden="true">03</span>
+            <div class="process-content">
+              <h3>Build</h3>
+              <p>I build in the open: working code at each stage, decisions explained as they&rsquo;re
+                 made, and a running version you can look at, not just hear about.</p>
+            </div>
+          </li>
+          <li class="process-item reveal">
+            <span class="process-num" aria-hidden="true">04</span>
+            <div class="process-content">
+              <h3>Verify &amp; hand over</h3>
+              <p>We test the result in your environment, and you get a project you can run yourself,
+                 with whatever it needs to be understood and maintained.</p>
+            </div>
+          </li>
+          <li class="process-item reveal">
+            <span class="process-num" aria-hidden="true">05</span>
+            <div class="process-content">
+              <h3>Follow-up</h3>
+              <p>After delivery I stay available for fixes and small adjustments. No disappearing
+                 acts once the invoice is paid.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================= -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow">// start a project</p>
+          <h2 class="section-title">Let&rsquo;s talk about what you&rsquo;re building</h2>
+          <p class="contact-lead">
+            Tell me what you&rsquo;re trying to solve. A few sentences is enough. I&rsquo;ll read it
+            personally and reply with an honest take on scope, approach and feasibility, even if
+            that honest take is &ldquo;you don&rsquo;t need software for this&rdquo;.
+          </p>
+
+          <!-- Contact email (user-provided 2026-08-17; updated 2026-08-19) -->
+          <pre><code class="language-email">mynetwork.gravel372@passinbox.com</code></pre>
+          <a class="btn btn-primary btn-email" href="mailto:mynetwork.gravel372@passinbox.com?subject=Hi%20Sarrtle">Email me</a>
+
+          <ul class="contact-list">
+            <li><span aria-hidden="true">&#9656;</span> what you&rsquo;re trying to achieve</li>
+            <li><span aria-hidden="true">&#9656;</span> what you&rsquo;ve already tried</li>
+            <li><span aria-hidden="true">&#9656;</span> what &ldquo;done&rdquo; looks like to you</li>
+          </ul>
+
+          <p class="contact-note">
+            Honestly: this page has no forms and no trackers, just a handful of static files
+            and an email address. There&rsquo;s nothing to collect and nothing to track.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Sarrtle — back to top">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-name">Sarrtle</span>
+        </a>
+        <p>Independent software development. Automation, data systems, AI tooling and backend
+           work, all done by one human being.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-note">
+        <p>Thanks for stopping by. If you have a project in mind, whether it&rsquo;s automation, data,
+           tooling, or just an idea worth talking through, I&rsquo;d love to hear it.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Mark. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

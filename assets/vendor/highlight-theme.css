@@ -1,0 +1,61 @@
+/* Sarrtle — highlight.js theme
+   Tuned to the site palette (green accent, warm highlights, terminal-mockup
+   aesthetic). No second theme: tokens reuse the site's CSS variables and the
+   red/yellow/green colors of the console dots. */
+.hljs {
+  color: var(--text);
+  background: transparent;
+}
+.hljs-comment,
+.hljs-quote {
+  color: #6b756f;
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-meta .hljs-keyword {
+  color: var(--accent);
+}
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute {
+  color: #e0b35c;
+}
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #e08a6b;
+}
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-title.function_,
+.hljs-function .hljs-title,
+.hljs-class .hljs-title {
+  color: #e9e7e0;
+  font-weight: 600;
+}
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-property,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  color: #9ad4a0;
+}
+.hljs-meta,
+.hljs-meta .hljs-string {
+  color: var(--text-dim);
+}
+.hljs-deletion {
+  color: #e97a6b;
+}
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: 700; }

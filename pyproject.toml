@@ -1,0 +1,17 @@
+[project]
+name = "sarrtle-home"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sarrtle", email = "sarrtle.dev@proton.me" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+sarrtle-home = "sarrtle_home:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"

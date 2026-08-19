@@ -1,0 +1,140 @@
+<!doctype html>
+<!--
+  Sarrtle — blog index
+  The listing and filter chips are rendered by ../js/blog.js from posts.json
+  (see blog/README.md). The <noscript> block below is the static fallback;
+  keep it in sync when publishing a post.
+-->
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — Sarrtle</title>
+  <meta name="description" content="Notes and write-ups on automation, data analysis, AI tooling, developer tooling and building this site — grounded in real work, with sources cited.">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Blog — Sarrtle">
+  <meta property="og:description" content="Write-ups on automation, data, AI tooling and developer tooling, from an independent programmer.">
+  <meta property="og:type" content="website">
+  <!-- SEO (BASE_URL assumed https://sarrtle.github.io/home/ — repo not yet created; confirm after first push) -->
+  <meta property="og:url" content="https://sarrtle.github.io/home/blog/">
+  <meta property="og:image" content="https://sarrtle.github.io/home/assets/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sarrtle — Notes from the workbench">
+  <meta property="og:site_name" content="Sarrtle">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sarrtle.github.io/home/blog/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Notes from the workbench",
+    "url": "https://sarrtle.github.io/home/blog/"
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/blog.js" defer></script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header" id="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html#top" aria-label="Sarrtle — back to top">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">Sarrtle</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="index.html" class="active" aria-current="page">Blog</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#process">Process</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm nav-cta-mobile" href="../index.html#contact">Start a Project</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm nav-cta" href="../index.html#contact">Start a Project</a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-box" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================ BLOG HERO ============================ -->
+    <section class="blog-hero">
+      <div class="container">
+        <p class="eyebrow">// blog</p>
+        <h1 class="section-title blog-title">Notes from the workbench</h1>
+        <p class="blog-intro">
+          Write-ups on the things I build and tinker with: automation, data analysis,
+          AI tooling, developer tooling, and notes on building this site itself.
+          Grounded in real work; research sources are cited wherever claims are made.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================== BLOG LISTING =========================== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="filter-bar" id="blog-chips" role="group" aria-label="Filter posts by category"></div>
+        <p class="blog-count" id="blog-count" aria-live="polite"></p>
+        <div id="blog-list" data-posts="posts.json" data-chips="blog-chips">
+          <noscript>
+            <p class="blog-empty">
+              The post list needs JavaScript. You can still read any post directly:
+              check <code>posts.json</code> or the
+              <a href="../index.html#blog">latest posts on the homepage</a>.
+            </p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html#top" aria-label="Sarrtle — back to top">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-name">Sarrtle</span>
+        </a>
+        <p>Independent software development. Automation, data systems, AI tooling and backend
+           work, all done by one human being.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#process">Process</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-note">
+        <p>Thanks for stopping by. If you have a project in mind, whether it&rsquo;s automation, data,
+           tooling, or just an idea worth talking through, I&rsquo;d love to hear it.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Mark. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
